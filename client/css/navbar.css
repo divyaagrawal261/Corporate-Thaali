@@ -1,0 +1,112 @@
+.navbar{
+    background-color: black;
+    height: 70px;
+}
+
+.navbar{
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    align-items:center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo img{
+    height: 70px;
+    margin-top: 8px;
+}
+
+.nav_left{
+    color: rgb(250, 110, 110);
+    font-family: 'Carattere', cursive;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_mid{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.nav_right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.search_logo img{
+    height: 16px;
+    margin-top: 5px;
+}
+
+.sign{
+    background-color: black;
+    color: white;
+    border: solid 1px;
+    border-color: rgb(196, 113, 113);
+    height: 32px;
+    width: 80px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sign a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cart{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.profile{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.home{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.home a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.cart a{
+    color: white;
+    text-decoration: none;
+}
+
+.profile a{
+    color: white;
+    text-decoration: none;
+}

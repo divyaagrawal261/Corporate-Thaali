@@ -1,0 +1,66 @@
+.page_1{
+    background-color: rgb(255, 255, 202);
+}
+
+.delivery_boy img{
+    height: 38em;
+    padding-left: 100px;
+}
+
+.page_1{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.fastest{
+    color: black;
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.delivery{
+    color: orangered;
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.easy{
+    color: black;
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.pickup{
+    color: rgb(8, 229, 45);
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.right_one{
+    margin-right: 10em;
+    padding-top: 8em;
+}
+
+/* .right_heading{
+    margin-left: 8em;
+} */
+
+.thali{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+.order{
+    background-color: rgb(255, 109, 56);
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-top: 30px;
+}
