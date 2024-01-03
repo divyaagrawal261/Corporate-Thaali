@@ -5,8 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Food</title>
+    <link rel="stylesheet" href="../src/css/addFood.css">
+    <link rel="stylesheet" href="../src/css/navbar.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="navbar">
+        <div class="nav_left">
+            <div class="logo">
+                <img src="../src/assets/delivery-man-removebg-preview.png" alt="">
+            </div>
+            <div class="name">Corporate Thali</div>
+        </div>
+        <div class="nav_mid">
+            <button class="home navbar-item"><a href="chefDash.html">Home</a></button>
+            <button class="menu navbar-item"><a href="page3.html">Menu</a></button>
+            <button class="cart navbar-item"><a href="errorPage.html">My Cart</a></button>
+        </div>
+        <div class="nav_right">
+            <button class="sign"><a href="../public/page2.html" onclick="localStorage.clear()">Log Out</a>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Add Food Product</h2>
+        <form id="productForm">
+            <div class="form-group">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="productDescription">Description:</label>
+                <textarea id="productDescription" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="productPrice">Price:</label>
+                <input type="text" id="productPrice" name="price" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submitBtn">Add Product</button>
+            </div>
+        </form>
+    </div>
+    <script src="../src/js/addFood.js"></script>
 </body>
 </html>

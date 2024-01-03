@@ -5,8 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
+    <link rel="stylesheet" href="../src/css/navbar.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="navbar">
+        <div class="nav_left">
+            <div class="logo">
+                <img src="../src/assets/delivery-man-removebg-preview.png" alt="">
+            </div>
+            <div class="name">Corporate Thali</div>
+        </div>
+        <div class="nav_mid">
+            <button class="home navbar-item"><a href="chefDash.html">Home</a></button>
+            <button class="menu navbar-item"><a href="page3.html">Menu</a></button>
+            <button class="cart navbar-item"><a href="errorPage.html">My Cart</a></button>
+        </div>
+        <div class="nav_right">
+            <button class="sign"><a href="../public/page2.html" onclick="localStorage.clear()">Log Out</a>
+            </button>
+        </div>
+    </div>
     
+    <div class="profile-container">
+        <div class="profile-picture">
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h2>User's Name</h2>
+            <p>uniqueID</p>
+            <p>Email: user@example.com</p>
+            <p>Location: City, Country</p>
+            <p>Contact: 123456789</p>
+            <p>Role: COOK</p>
+        </div>
+    </div>
+    <script src="../src/js/profile.js"></script>
 </body>
 </html>

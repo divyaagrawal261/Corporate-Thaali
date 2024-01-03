@@ -42,4 +42,10 @@ const loginUser=expressAsyncHandler(async(req,res)=>{
   
 })
 
-export {registerUser,loginUser};
+//get current user
+const getCurrentUser=expressAsyncHandler(async(req,res)=>{
+    const uniqueId=req.user.uniqueId;
+    const currentUser=await user.findOne({uniqueId});
+    res.status(200).json(currentUser)
+})
+export {registerUser,loginUser,getCurrentUser};
