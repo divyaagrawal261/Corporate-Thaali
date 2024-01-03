@@ -1,9 +1,17 @@
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
 .page_1{
     background-color: rgb(255, 255, 202);
 }
-
+.page1-container{
+    height: 100vh;
+    background-color:  rgb(255, 255, 202);
+}
 .delivery_boy img{
     height: 38em;
+    margin-top: -3rem;
     padding-left: 100px;
 }
 
@@ -46,10 +54,6 @@
     padding-top: 8em;
 }
 
-/* .right_heading{
-    margin-left: 8em;
-} */
-
 .thali{
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
@@ -63,4 +67,12 @@
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
     margin-top: 30px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.order:hover{
+    background-color: black;
+    color: rgb(255, 109, 56);
+    transition: 500ms;
 }

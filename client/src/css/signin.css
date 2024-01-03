@@ -1,15 +1,17 @@
 body{
-    background-image: url(assets/Untitled_wll.png);
+    background-image: url(../assets/Untitled_wll.png);
     font-family: 'Poppins', sans-serif;
     height: max-content;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 97.7vh;
+    overflow-y: hidden;
+    height: 100vh;
 }
 
 
 .page_1{
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +22,6 @@ body{
     height: 480px;
     width:  31em;
     display: flex;
-    margin-top: 123px;
     z-index: 5;
 }
 

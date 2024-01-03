@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signin Page</title>
-    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="../src/css/signin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -17,22 +17,22 @@
                 <hr class ="line_1">
     
                 <div class="mail">
-                    <div class="mail_icon"><img src="assets/email.png" alt="" srcset=""></div>
+                    <div class="mail_icon"><img src="../src/assets/email.png" alt="" srcset=""></div>
                     <div class="enter_mail">Enter your mail here</div>
-                    <input type="text">
+                    <input type="email" class="loginEmail">
                 </div>
                 <hr class="line_2">
     
                 <div class="password">
-                    <div class="pass_icon"><img src="assets/padlock.png" alt="" srcset=""></div>
+                    <div class="pass_icon"><img src="../src/assets/padlock.png" alt="" srcset=""></div>
                     <div class="enter_pass">Enter your password</div>
-                    <input type="text">
+                    <input type="password" class="loginPassword">
                 </div>
                 <hr class="line_3">
     
                 <div class="forgot_pass">Forgot password?</div>
     
-                <button class="log_butt">Login</button>
+                <button class="log_butt" type="submit">Login</button>
                 
                 <div class="no_account">
                     <div class="dont">Don't have an account?</div>
@@ -41,5 +41,6 @@
             </div>
         </div>
     </div>
+    <script src="../src/js/login.js"></script>
 </body>
 </html>

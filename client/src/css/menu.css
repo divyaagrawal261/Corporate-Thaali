@@ -1,11 +1,10 @@
 body{
-    /* background-image: url(assets/wall.jpg);  */
-    background-image: url(assets/Untitledd.png);
+    background-image: url(../assets/Untitledd.png);
     height: max-content;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* overflow: hidden; */
+    background-attachment: fixed;
 }
 
 .food_1{
@@ -100,4 +99,7 @@ body{
     z-index: 5;
     margin-bottom: 60px;
     margin-top: 60px;
+}
+::-webkit-scrollbar{
+    display: none;
 }

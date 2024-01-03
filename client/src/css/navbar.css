@@ -57,7 +57,10 @@
     border-radius: 6px;
     cursor: pointer;
 }
-
+.sign:hover > a, .sign:hover{
+    background-color: white;
+    color: black;
+}
 .sign a{
     color: white;
     text-decoration: none;
@@ -90,23 +93,10 @@
     border: none;
     cursor: pointer;
 }
-
-.home a{
+.navbar-item a{
     color: white;
     text-decoration: none;
 }
-
-.menu a{
-    color: white;
-    text-decoration: none;
-}
-
-.cart a{
-    color: white;
-    text-decoration: none;
-}
-
-.profile a{
-    color: white;
-    text-decoration: none;
+.navbar-item a:hover{
+    text-shadow: rgb(200, 255, 0) 0px 0px  5px;
 }

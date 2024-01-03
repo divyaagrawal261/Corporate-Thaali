@@ -32,14 +32,12 @@ const loginUser=expressAsyncHandler(async(req,res)=>{
     else if(regUser && bcrypt.compare(regUser.password,password))
     {
         const token=jwt.sign({regUser},process.env.ACCESS_TOKEN_SECRET, { expiresIn: '1h' });
-
-        res.status(200).json(token);
-
-        console.log(regUser);
+        
         if(regUser.role==="cook")
-        res.redirect("/cook/dashboard")
+        res.status(200).json({token,redirectUrl:"../public/page3.html"})
         else if(regUser.role==="corporate")
-        res.redirect("/user/dashboard")
+        res.status(200).json({token,redirectUrl:".../public/page3.html"})
+
     }
   
 })
