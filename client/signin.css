@@ -1,0 +1,108 @@
+body{
+    background-image: url(assets/Untitled_wll.png);
+    font-family: 'Poppins', sans-serif;
+    height: max-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 97.7vh;
+}
+
+
+.page_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signpage{
+    background-color: rgb(255, 223, 142);
+    height: 480px;
+    width:  31em;
+    display: flex;
+    margin-top: 123px;
+    z-index: 5;
+}
+
+.login{
+    padding-left: 50px;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.line_1{
+    width: 19px;
+    position: relative;
+    right: 10em;
+    bottom: 10px;
+    color: black;
+}
+
+.mail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 45px;
+    gap: 10px;
+}
+
+.mail_icon img{
+    height: 33px;
+}
+
+.line_2{
+    margin-left: 50px;
+}
+
+.password{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 45px;
+    padding-top: 10px;
+}
+
+.pass_icon img{
+    height: 33px;
+}
+
+.line_3{
+    margin-left: 50px;
+}
+
+.forgot_pass{
+    padding-left: 50px;
+    padding-top: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.log_butt{
+    /* height: 30px; */
+    width: 150px;
+    margin-top: 40px;
+    font-weight: 100px;
+    color: white;
+    background-color: black;
+    font-size: 23px;
+    margin-left: 8em;
+    cursor: pointer;
+}
+
+.no_account{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.sign_up{
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 223, 142);
+    font-size: 17px;
+}
