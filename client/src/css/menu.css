@@ -10,6 +10,7 @@ body{
 .food_1{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card_1{
