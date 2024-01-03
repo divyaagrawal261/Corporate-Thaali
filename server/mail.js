@@ -10,7 +10,7 @@ var transporter=nodemailer.createTransport({
 
 var mailOptions={
     from:"imt_2022038@iiitm.ac.in",
-to:"imt_2022038@iiitm.ac.in",
+to:"malhotrakhushi507@gmail.com",
 subject:"Sending A test Email",
 html:` <!DOCTYPE html>
 <html>

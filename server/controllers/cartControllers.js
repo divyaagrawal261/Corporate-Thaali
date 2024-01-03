@@ -26,7 +26,7 @@ const addToCart=expressAsyncHandler(async(req,res)=>{
             existingItem.quantity++;
         }
         else
-        card.items.push({foodId, cookId, title, price})
+        cart.items.push({foodId, cookId, title, price})
         await cart.save();
     }
 

@@ -1,11 +1,10 @@
 import express from "express";
-import {createFood,  showFood } from "../controllers/foodControllers.js";
+import createOrder from "../controllers/orderControllers.js";
 import validateToken from "../middlewares/validateToken.js";
 
 const Router=express.Router();
 
 Router.use("/",validateToken)
-Router.post("/create",createFood)
-      .get("/all",showFood)
+Router.post("/create",createOrder)
 
 export default Router;

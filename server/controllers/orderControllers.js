@@ -44,7 +44,7 @@ const createOrder=expressAsyncHandler(async(req,res)=>{
     </head>
     <body style="font-family: 'Poppins', sans-serif; background-color: #f7f0e3; margin: 0; padding: 0;">
       <div style="width: 80%; margin: 20px auto; background-color: #fffdd0; padding: 20px; border-radius: 5px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); color: #5e4c5a;">
-        <h1 style="color: #4d2600; text-align: center;">Request for <Recipe Name></h1>
+        <h1 style="color: #4d2600; text-align: center;">Request for ${Title}</h1>
         <p style="line-height: 1.6;">Dear ${cookName},</p>
         <p style="line-height: 1.6;">I hope this message finds you well. I wanted to inform you that someone has requested the <Recipe Name> from one of our patrons. They are eager to experience your culinary expertise with this delightful dish.</p>
         
@@ -82,9 +82,9 @@ const createOrder=expressAsyncHandler(async(req,res)=>{
       });
     })
 
-    const order=await order.create({userId,items,amount});
+    const Order=await order.create({userId,items,amount});
 
-    res.status(201).json(order);
+    res.status(201).json(Order);
 
 })
 

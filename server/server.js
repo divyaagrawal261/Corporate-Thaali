@@ -4,6 +4,7 @@ import connectDb from "./config/dbConnect.js";
 import userRoutes from "./routes/userRoutes.js";
 import foodRoutes from "./routes/foodRoutes.js";
 import cartRoutes from "./routes/cartRoutes.js";
+import orderRoutes from "./routes/orderRoutes.js";
 dotenv.config();
 
 connectDb();
@@ -16,3 +17,4 @@ app.listen(port,()=>{
 app.use("/users",userRoutes)
 app.use("/food",foodRoutes)
 app.use("/cart",cartRoutes)
+app.use("/order",orderRoutes)

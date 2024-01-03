@@ -2,6 +2,11 @@ import expressAsyncHandler from "express-async-handler";
 import foodItem from "../models/foodModel.js";
 import {nanoid} from "nanoid";
 
+//Show all food listings
+const showFood=expressAsyncHandler(async(req,res)=>{
+    const food=await foodItem.find();
+    res.status(200).json(food);
+})
 //Create Food Listing
 const createFood=expressAsyncHandler(async(req,res)=>{
     const {title,price,description}=req.body;
@@ -17,4 +22,4 @@ const createFood=expressAsyncHandler(async(req,res)=>{
     res.status(401).json({message:"User is not a cook"})
 })
 
-export default createFood;
+export {showFood,createFood};
