@@ -8,16 +8,22 @@ body{
     font-family: 'Poppins', sans-serif;
     color: white;
 }
-
+.cart_list_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 .cart_1{
     display: flex;
     justify-content: space-between;
     gap: 30px;
     background-color: rgba(0,0,0,0.7);
-    margin: 50px;
     width: 25em;
     height: 11.7em;
     border-radius: 8px;
+    height: fit-content;
 }
 
 .cart_left img{
@@ -66,7 +72,7 @@ body{
 }
 
 .cart_list{
-    display: flex;
+    /* display: flex; */
     margin-top: 10px;
 }
 
