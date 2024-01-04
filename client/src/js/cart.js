@@ -2,7 +2,7 @@ const storedToken = localStorage.getItem("accessToken");
 const token = JSON.parse(storedToken).token;
 const container=document.querySelector(".cart_list_1");
 
-fetch("http://localhost:5010/cart/show", {
+fetch("https://corporate-thaali-backend.onrender.com/cart/show", {
   method: "POST",
   headers: {
     Authorization: `Bearer ${token}`,
@@ -70,7 +70,7 @@ function placeOrder()
   })
   console.log(items);
 
-  fetch("http://localhost:5010/order/create",{
+  fetch("https://corporate-thaali-backend.onrender.com/order/create",{
     method:"POST",
     headers: {
       'Authorization': `Bearer ${token}`,
