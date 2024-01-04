@@ -1,5 +1,5 @@
 body{
-    background-image: url(/client/src/assets/cus.jpg);
+    background-image: url(../assets/cus.jpg);
     height: max-content;
     background-repeat: no-repeat;
     background-size: cover;

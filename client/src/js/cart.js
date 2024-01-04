@@ -18,7 +18,7 @@ fetch("https://corporate-thaali-backend.onrender.com/cart/show", {
         const card = document.createElement("div");
         card.className = "cart_1";
         card.innerHTML = `<div class="cart_left">
-          <img src="/client/src/assets/paneer.jpg" alt="">
+          <img src="../src/assets/paneer.jpg" alt="">
       </div>
       <div class="cart_right">
   
@@ -37,7 +37,7 @@ fetch("https://corporate-thaali-backend.onrender.com/cart/show", {
           
           <div class="price">
               <div class="rupees">
-                  <img src="/client/src/assets/rupee.png" alt="">
+                  <img src="../src/assets/rupee.png" alt="">
               </div>
               <div class="rate">${element.price}</div>
           </div>
