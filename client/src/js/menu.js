@@ -1,5 +1,5 @@
 
-fetch("http://localhost:5010/food/all")
+fetch("https://corporate-thaali-backend.onrender.com/food/all")
 .then((res) => res.json())
 .then((foodItems) => {
     console.log(foodItems);
@@ -89,7 +89,7 @@ function addToCart(button)
   const parent=(button.parentElement).parentElement;
   var foodId=parent.querySelector("#foodId").innerHTML;
   foodId=foodId.split(" ")[2];
-  fetch("http://localhost:5010/cart/add",{
+  fetch("https://corporate-thaali-backend.onrender.com/cart/add",{
     method:"POST",
     headers: {
         'Authorization': `Bearer ${token}`,
