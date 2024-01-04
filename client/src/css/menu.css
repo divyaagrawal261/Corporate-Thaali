@@ -11,6 +11,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card_1{
@@ -21,7 +22,7 @@ body{
     height: 25em;
     border-radius: 10px;
     z-index: 5;
-    margin-top: 60px;
+    margin-bottom: 10px;
 }
 
 .food_img img{
@@ -98,7 +99,6 @@ body{
     height: 25em;
     border-radius: 10px;
     z-index: 5;
-    margin-bottom: 60px;
     margin-top: 60px;
 }
 ::-webkit-scrollbar{
