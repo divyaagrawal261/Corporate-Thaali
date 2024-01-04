@@ -1,0 +1,60 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(/client/src/assets/bg.avif);
+    height: max-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* .table_head{
+    display: flex;
+    gap: 50px;
+}
+
+.table_below{
+    display: flex;
+    gap: 50px;
+} */
+
+
+  
+td{
+    text-align:center;
+    padding: 8px;
+    border: 1px solid #dddddd;
+}
+
+th{
+    text-align:center;
+    padding: 8px;
+    border: 1px solid #dddddd;
+}
+
+.tablee{
+    padding: 2em;
+}
+
+.order_table{
+    background-color: rgba(0,0,0,0.6);
+    margin-top: 10em;
+    margin-left: 30em;
+   width: max-content;
+    color: white;
+    border-radius: 10px;
+    z-index: 9;
+}
+
+.order_head{
+    padding-top: 1em;
+    padding-left: 2em;
+}
+
+.order_id{
+    padding-bottom: 0.3em;
+}
+
+.date{
+    padding-bottom: 0.3em;
+}
