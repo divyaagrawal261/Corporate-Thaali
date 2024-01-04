@@ -10,7 +10,7 @@ function addFood(event)
     const description=document.querySelector("#productDescription").value;
     const price=document.querySelector("#productPrice").value;
 
-    fetch("http://localhost:5010/food/create",{
+    fetch("https://corporate-thaali-backend.onrender.com/food/create",{
         method: "POST",
         headers: {
             'Authorization': `Bearer ${token}`,
