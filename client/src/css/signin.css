@@ -107,3 +107,8 @@ body{
     background-color: rgb(255, 223, 142);
     font-size: 17px;
 }
+
+.sign_up a{
+    color: black;
+    text-decoration: none;
+}

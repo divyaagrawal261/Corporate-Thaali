@@ -1,0 +1,48 @@
+.write_name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 45px;
+    gap: 10px;
+}
+
+.user img{
+    height: 38px;
+}
+
+.place{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 45px;
+    gap: 20px;
+}
+
+.place_icon img{
+    height: 33px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 45px;
+    gap: 10px;
+}
+
+.con_icon img{
+    height: 35px;
+}
+
+#tell{
+    height: 18px;
+}
+
+.signuppage{
+    background-color: rgb(255, 223, 142);
+    height: 550px;
+    width:  31em;
+    display: flex;
+    z-index: 5;
+}
