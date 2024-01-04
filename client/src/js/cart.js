@@ -23,13 +23,15 @@ fetch("http://localhost:5010/cart/show", {
       <div class="cart_right">
   
           <div class="food_name">${element.title}</div>
+          <div class="food_name" id="foodId">Food ID: ${element.foodId}</div>
+
           
           <div class="quants">
               <div class="quantity">
                   Quantity
               </div>
               <div class="number">
-                  <input type="number" name="" id="" value="${element.quantity}">
+                  <input type="number" name="" id="foodQuantity" value="${element.quantity}">
               </div>
           </div>
           
@@ -40,9 +42,40 @@ fetch("http://localhost:5010/cart/show", {
               <div class="rate">${element.price}</div>
           </div>
   
-          <button class="cook_id">Cook Id : ${element.cookId}</button>
+          <button class="cook_id">Cook Id: ${element.cookId}</button>
       </div>
   `;
         container.append(card)
     });
   });
+
+const orderBtn=document.querySelector(".sign");
+orderBtn.addEventListener("click",placeOrder);
+
+function placeOrder()
+{
+  const items=[];
+  const foodItems=document.querySelectorAll(".cart_1");
+  foodItems.forEach((item)=>{
+    var foodId=item.querySelector("#foodId");
+    foodId=(foodId.innerHTML).split(" ")[2];
+    var title=item.querySelector(".food_name").innerHTML;
+    var quantity=item.querySelector("#foodQuantity").value;
+    var price=item.querySelector(".rate").innerHTML;
+    var cookId=(item.querySelector(".cook_id").innerHTML).split(" ")[2];
+
+    const food={foodId,cookId,title,price,quantity};
+    items.push(food);
+
+  })
+  console.log(items);
+
+  fetch("http://localhost:5010/order/create",{
+    method:"POST",
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({items:items})
+  }).then((res)=>res.json()).then((data)=>console.log(data));
+}

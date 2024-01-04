@@ -36,7 +36,11 @@ body{
 .food_name{
     font-weight: bold;
     font-size: 18px;
-    margin-left: 14px;
+    margin-left: 10px;
+}
+#foodId{
+    font-size: 12px;
+    margin-top: 1px;
 }
 
 .price{

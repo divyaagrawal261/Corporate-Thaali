@@ -35,11 +35,17 @@ th{
 .tablee{
     padding: 2em;
 }
+.ordersContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 
+}
 .order_table{
     background-color: rgba(0,0,0,0.6);
-    margin-top: 10em;
-    margin-left: 30em;
    width: max-content;
     color: white;
     border-radius: 10px;

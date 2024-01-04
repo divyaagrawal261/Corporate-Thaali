@@ -2,6 +2,14 @@ import expressAsyncHandler from "express-async-handler";
 import user from "../models/userModel.js";
 import nodemailer from "nodemailer";
 import order from "../models/orderModel.js";
+import {nanoid} from "nanoid";
+
+//Show my orders
+const showOrders=expressAsyncHandler(async(req,res)=>{
+  const userId=req.user.uniqueId;
+  const orders=await order.find({userId});
+  res.status(200).json(orders);
+})
 
 //Create a new Order
 const createOrder=expressAsyncHandler(async(req,res)=>{
@@ -82,10 +90,11 @@ const createOrder=expressAsyncHandler(async(req,res)=>{
       });
     })
 
-    const Order=await order.create({userId,items,amount});
+    const orderId="OR/"+nanoid(6);
+    const Order=await order.create({orderId,userId,items,amount});
 
     res.status(201).json(Order);
 
 })
 
-export default createOrder;
+export  {showOrders,createOrder};
