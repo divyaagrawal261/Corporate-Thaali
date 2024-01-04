@@ -7,6 +7,14 @@ const showFood=expressAsyncHandler(async(req,res)=>{
     const food=await foodItem.find();
     res.status(200).json(food);
 })
+
+//show my food listings
+const showMyFood=expressAsyncHandler(async(req,res)=>{
+    const cookId=req.user.uniqueId;
+    const food=await foodItem.find({cookId});
+    res.status(200).json(food);
+})
+
 //Create Food Listing
 const createFood=expressAsyncHandler(async(req,res)=>{
     const {title,price,description}=req.body;
@@ -22,4 +30,4 @@ const createFood=expressAsyncHandler(async(req,res)=>{
     res.status(401).json({message:"User is not a cook"})
 })
 
-export {showFood,createFood};
+export {showFood, showMyFood, createFood};

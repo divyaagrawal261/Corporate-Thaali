@@ -36,7 +36,7 @@ const loginUser=expressAsyncHandler(async(req,res)=>{
         if(regUser.role==="cook")
         res.status(200).json({token,redirectUrl:"../public/chefDash.html"})
         else if(regUser.role==="corporate")
-        res.status(200).json({token,redirectUrl:".../public/page3.html"})
+        res.status(200).json({token,redirectUrl:"../public/corporateDash.html"})
 
     }
   

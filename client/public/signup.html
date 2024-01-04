@@ -21,7 +21,7 @@
                         <img src="../src/assets/user.png" alt="">
                     </div>
                     <div class="name_sign">Your Name</div>
-                <input type="text">
+                <input type="text" id="name">
                 </div>
 
                 <hr class="line_2"> 
@@ -31,7 +31,7 @@
                         <img src="../src/assets/gps.png" alt="">
                     </div>
                     <div class="place_loc">Your Location</div>
-                    <input type="text">
+                    <input type="text" id="place">
                 </div>
 
                 <hr class="line_2">
@@ -50,14 +50,21 @@
                 <div class="mail">
                     <div class="mail_icon"><img src="../src/assets/email.png" alt="" srcset=""></div>
                     <div class="enter_mail">Your mail</div>
-                    <input type="email" class="loginEmail">
+                    <input type="email" class="loginEmail" id="email">
                 </div>
                 <hr class="line_2">
     
                 <div class="password">
                     <div class="pass_icon"><img src="../src/assets/padlock.png" alt="" srcset=""></div>
                     <div class="enter_pass">Create password</div>
-                    <input type="password" class="loginPassword">
+                    <input type="password" class="loginPassword" id="password">
+                </div>
+                <div class="password">
+                    <div>Role:</div>
+                    <select name="" id="role">
+                        <option value="cook">COOK</option>
+                        <option value="corporate">CORPORATE</option>
+                    </select>
                 </div>
                 <hr class="line_3">
     
@@ -68,6 +75,6 @@
             </div>
         </div>
     </div>
-    
+    <script src="../src/js/signup.js"></script>
 </body>
 </html>
