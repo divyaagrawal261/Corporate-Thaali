@@ -1,5 +1,5 @@
-const loginurl = "http://localhost:5010/users/login";
-const getUserDetailsUrl = "http://localhost:5010/users/current";
+const loginurl = "https://corporate-thaali-backend.onrender.com/users/login";
+const getUserDetailsUrl = "https://corporate-thaali-backend.onrender.com/users/current";
 
 const loginBtn = document.querySelector(".log_butt");
 var accessToken;
