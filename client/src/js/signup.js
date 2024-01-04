@@ -10,7 +10,7 @@ function signUp()
     const password=document.querySelector("#password").value;
     const role=document.querySelector("#role").value;
 
-    fetch("http://localhost:5010/users/register",{
+    fetch("https://corporate-thaali-backend.onrender.com/users/register",{
         method:"POST",
         headers: {
                 "Content-Type": "application/json",
