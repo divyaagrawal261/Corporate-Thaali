@@ -100,3 +100,14 @@
 .navbar-item a:hover{
     text-shadow: rgb(200, 255, 0) 0px 0px  5px;
 }
+
+.cuisine{
+    background-color: black;
+    border: none;
+}
+
+.my_orders{
+    background-color: black;
+    border: none;
+}
+

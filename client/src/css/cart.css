@@ -1,0 +1,89 @@
+body{
+    background-image: url(/client/src/assets/Untitled-V4OFHYApe-transformed.jpeg);
+    height: max-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.cart_1{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: rgba(0,0,0,0.7);
+    margin: 50px;
+    width: 25em;
+    height: 11.7em;
+    border-radius: 8px;
+}
+
+.cart_left img{
+    height: 10em;
+    margin: 0.8em;
+    border-radius: 8px;
+    width: 11em;
+}
+
+.food_name{
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 14px;
+}
+
+.price{
+    display: flex;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.rate{
+    font-weight: bold;
+}
+
+.rupees img{
+    height: 14px;
+}
+
+.number input{
+    width: 30px;
+}
+
+.quants{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.cart_right{
+    margin-top: 1em;
+    margin-right: 30px;
+}
+
+.cart_list{
+    display: flex;
+    margin-top: 10px;
+}
+
+.cook_id{
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    /* margin-top: 1em;
+    margin-left: 5px; */
+    background-color: rgba(0,0,0,0);
+    color: white;
+    margin-top: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+/* .cook_id:hover{
+    background-color: rgba(0,0,0,0.8);
+}    */

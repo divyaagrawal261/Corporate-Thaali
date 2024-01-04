@@ -71,8 +71,14 @@ body{
     display: flex;
     align-items: center;
 }
+
 .order:hover{
     background-color: black;
     color: rgb(255, 109, 56);
     transition: 500ms;
+}
+
+.order a{
+    color: white;
+    text-decoration: none;
 }
