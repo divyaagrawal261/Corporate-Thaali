@@ -7,6 +7,6 @@ const Router=express.Router();
 Router.use("/",validateToken)
 Router.post("/add",addToCart)
       .post("/remove",removeFromCart)
-      .get("/show",showCart)
+      .post("/show",showCart)
 
 export default Router;
