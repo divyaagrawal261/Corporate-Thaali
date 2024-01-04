@@ -1,7 +1,7 @@
 const storedToken = localStorage.getItem('accessToken');
 const token=JSON.parse(storedToken).token;
 
-fetch("http://localhost:5010/users/current",{
+fetch("https://corporate-thaali-backend.onrender.com/users/current",{
     method:"POST",
     headers: {
         'Authorization': `Bearer ${token}`,
