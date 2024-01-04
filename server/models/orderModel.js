@@ -9,9 +9,13 @@ const orderItemSchema=new mongoose.Schema({
 });
 
 const orderSchema=new mongoose.Schema({
+    orderId:{type:String},
     userId:{type:String},
     items:[orderItemSchema],
     amount:{type:Number}
+},
+{
+    timestamps:true
 })
 
 const order=mongoose.model("order",orderSchema);

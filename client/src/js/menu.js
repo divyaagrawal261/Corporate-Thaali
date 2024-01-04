@@ -1,24 +1,22 @@
-const storedToken = localStorage.getItem('accessToken');
-const token=JSON.parse(storedToken).token;
 
 fetch("http://localhost:5010/food/all")
-  .then((res) => res.json())
-  .then((foodItems) => {
+.then((res) => res.json())
+.then((foodItems) => {
     console.log(foodItems);
-
+    
     const foodCardsContainer = document.querySelector(".food_1");
     foodItems.forEach((foodItem) => {
-      const { foodId, cookId, description, price, title } = foodItem;
-      const card = document.createElement("div");
-      card.className = "card_1";
-      card.innerHTML = `<div class="food_img">
-<img src="https://source.unsplash.com/600x400/?${title}" alt="">
-</div>
-<div class="title">
-<div class="food_name">${title}</div>
-<div class="price">
-<div class="rupees">
-<img src="../src/assets/rupee.png" alt="">
+        const { foodId, cookId, description, price, title } = foodItem;
+        const card = document.createElement("div");
+        card.className = "card_1";
+        card.innerHTML = `<div class="food_img">
+        <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chan-walrus-958545.jpg&fm=jpg" alt="">
+        </div>
+        <div class="title">
+        <div class="food_name">${title}</div>
+        <div class="price">
+        <div class="rupees">
+        <img src="../src/assets/rupee.png" alt="">
 </div>
 <div class="rate">${price}</div>
 </div>
@@ -33,7 +31,10 @@ foodCardsContainer.append(card);
 }
 
 );
-  });
+});
+
+const storedToken = localStorage.getItem('accessToken');
+const token=JSON.parse(storedToken).token;
 
 const cartBtn=document.querySelector(".cart");
 const myOrderBtn=document.querySelector(".my_orders");
@@ -42,13 +43,13 @@ const profileBtn=document.querySelector(".profile");
 cartBtn.addEventListener("click",(event)=>
 {
     event.preventDefault();
-
-if(!localStorage.getItem('accessToken'))
-{
-    window.location.href="../public/page2.html";
-}
-else
-{
+    
+    if(!localStorage.getItem('accessToken'))
+    {
+        window.location.href="../public/page2.html";
+    }
+    else
+    {
     window.location.href="../public/cart.html"
 }
 
