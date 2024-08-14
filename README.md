@@ -11,11 +11,11 @@
 
 # Technology Stack
 
-Frontend: React.js, HTML, CSS, JavaScript
-Backend: Node.js, Express.js, MongoDB
-Database: MongoDB
-Version Control: Git & GitHub
-Deployment: Vercel
+1. Frontend: React.js, HTML, CSS, JavaScript
+2. Backend: Node.js, Express.js, MongoDB
+3. Database: MongoDB
+4. Version Control: Git & GitHub
+5. Deployment: Vercel
 
 
 
