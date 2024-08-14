@@ -15,7 +15,7 @@
 2. Backend: Node.js, Express.js, MongoDB
 3. Database: MongoDB
 4. Version Control: Git & GitHub
-5. Deployment: Vercel
+5. Deployment: Netlify
 
 
 
